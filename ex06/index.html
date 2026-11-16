@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saraiva Tech · Módulo 02 · Barra de navegação responsiva. Exercício académico de HTML e CSS.">
+    <title>Barra de navegação responsiva | Saraiva Tech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip" href="#conteudo">Saltar para o conteúdo</a>
+    <header>
+        <div class="container">
+            <a href="../index.html">← Módulo 02</a>
+            <p class="marca">Saraiva Tech</p>
+            <p class="eyebrow">Exercício 06</p>
+            <h1>Barra de navegação responsiva</h1>
+            <nav class="desktop-nav" aria-label="Navegação principal"><a class="brand" href="../index.html">Saraiva Tech</a><div class="nav-links"><a href="#servicos">Serviços</a><a href="#processo">Como funciona</a><a href="#contacto">Contacto</a></div><a class="btn nav-action" href="#contacto">Pedir assistência</a></nav>
+            <div class="mobile-nav"><a class="brand" href="../index.html">Saraiva Tech</a><details><summary>Menu</summary><nav aria-label="Navegação móvel"><a href="#servicos">Serviços</a><a href="#processo">Como funciona</a><a href="#contacto">Contacto</a><a class="btn nav-action" href="#contacto">Pedir assistência</a></nav></details></div>
+        </div>
+    </header>
+    <main id="conteudo" class="container">
+        <section id="servicos"><h2>Assistência para o teu computador</h2><p>A navegação acima adapta-se à largura disponível. Em ecrãs estreitos, abre «Menu» para consultar os links.</p><div class="cards"><article class="panel"><h3>Diagnóstico</h3><p>Perceber a origem da falha antes de escolher uma intervenção.</p></article><article class="panel"><h3>Manutenção</h3><p>Verificar o estado do equipamento e reduzir a acumulação de pó.</p></article><article class="panel"><h3>Reparação</h3><p>Avaliar componentes e apresentar as opções ao utilizador.</p></article></div></section>
+        <section id="processo" class="panel"><h2>Como funciona</h2><ol><li>Descreve o problema e identifica o equipamento.</li><li>Prepara uma cópia dos teus ficheiros importantes.</li><li>Combina a entrega e os acessórios necessários ao diagnóstico.</li></ol><a href="../ex03/index.html">Ler o guia de preparação</a></section>
+        <section id="contacto" class="panel"><h2>Preparar um contacto</h2><p>Esta página faz parte de um exercício académico. Podes experimentar o formulário demonstrativo, sem envio de dados.</p><a class="btn" href="../ex04/index.html#formulario">Abrir formulário demonstrativo</a></section>
+        <section class="note"><h2>O que demonstra</h2><p>A marca, os links e o botão de ação alinham-se com Flexbox. A partir de 768px, aparece a navegação completa. Abaixo dessa largura, o menu usa os elementos nativos <code>details</code> e <code>summary</code>, sem JavaScript.</p></section>
+    </main>
+    <footer><div class="container">Saraiva Tech · Exercício académico · <a href="../index.html">Todos os exercícios</a></div></footer>
+</body>
+</html>

@@ -1,0 +1,65 @@
+:root {
+    --azul: #142d4e;
+    --azul-link: #1455a0;
+    --verde: #236442;
+    --menta: #dff3e7;
+    --fundo: #f1f4f7;
+    --superficie: #fff;
+    --texto: #26364a;
+    --muted: #526477;
+    --borda: #cfdae6;
+    --fonte: "Segoe UI", Arial, sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: var(--fonte); line-height: 1.65; color: var(--texto); background: var(--fundo); }
+.container { width: min(1120px, 100%); margin-inline: auto; padding: 32px 24px; }
+header { color: white; background: var(--azul); }
+header a { color: #c2e6ff; }
+.marca { font-weight: 800; letter-spacing: .04em; }
+.eyebrow { font-size: .85rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--verde); }
+header .eyebrow { color: #b4efcb; }
+h1 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.15; max-width: 24ch; margin: 16px 0; }
+h2 { font-size: clamp(1.4rem, 3vw, 1.85rem); line-height: 1.3; color: var(--azul); }
+h3 { font-size: 1.15rem; line-height: 1.35; margin-top: 0; }
+p { margin: 0 0 16px; }
+a { color: var(--azul-link); text-underline-offset: 4px; }
+a:hover { text-decoration-thickness: 3px; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus-visible, [tabindex]:focus-visible { outline: 3px solid #0075e6; outline-offset: 4px; }
+section { margin-bottom: 40px; scroll-margin-top: 24px; }
+.panel { padding: 24px; background: var(--superficie); border: 1px solid var(--borda); border-radius: 12px; }
+.note { padding: 16px 20px; border-left: 4px solid var(--verde); background: var(--menta); border-radius: 4px; }
+.muted { color: var(--muted); }
+code { font-size: .9em; overflow-wrap: anywhere; }
+.btn { display: inline-flex; align-items: center; justify-content: center; padding: 11px 18px; border: 2px solid var(--azul); border-radius: 6px; background: var(--azul); color: white; font: inherit; font-weight: 700; text-decoration: none; cursor: pointer; }
+.btn:hover { background: #254b77; border-color: #254b77; }
+.btn-secondary { color: var(--azul); background: white; }
+.btn-secondary:hover { color: var(--azul); background: #eaf3fc; }
+.btn:disabled { background: #e2e8ef; color: #526477; border-color: #cfdae6; cursor: not-allowed; }
+.badge { display: inline-block; font-size: .8rem; font-weight: 700; padding: 4px 10px; border-radius: 99px; color: #205b30; background: var(--menta); }
+.badge-wait { color: #7a4500; background: #fff0cc; }
+.badge-info { color: #163e63; background: #e6f1fb; }
+footer { border-top: 1px solid var(--borda); color: var(--muted); font-size: .9rem; }
+img { display: block; max-width: 100%; }
+.skip { position: absolute; top: -100px; left: 16px; padding: 12px; background: white; color: var(--azul); z-index: 10; }
+.skip:focus { top: 12px; }
+@media (max-width: 480px) {
+    .container { padding: 24px 16px; }
+    .panel { padding: 20px; }
+}
+
+/* Componentes reutilizáveis: card, btn, alert, badge e field. */
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr)); gap: 20px; }
+.card { background: white; padding: 24px; border: 1px solid var(--borda); border-radius: 12px; }
+.card h3 { margin-top: 20px; }
+.actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.actions .btn { max-width: 100%; white-space: normal; text-align: center; }
+.alerts { display: grid; gap: 12px; }
+.alert { margin: 0; padding: 18px; border: 1px solid; border-left-width: 5px; border-radius: 6px; }
+.alert-info { color: #163e63; background: #e6f1fb; border-color: #4678a5; }
+.alert-warning { color: #7a4500; background: #fff4dc; border-color: #a96a0e; }
+.alert-success { color: #205b30; background: var(--menta); border-color: #3b8153; }
+.form { max-width: 720px; }
+.field { display: grid; gap: 6px; margin-bottom: 20px; }
+.field label { font-weight: 700; }
+.field input, .field select, .field textarea { width: 100%; min-width: 0; padding: 12px; border: 1px solid #74869b; border-radius: 6px; background: white; color: var(--texto); font: inherit; }
+.field textarea { resize: vertical; }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saraiva Tech · Módulo 02 · Componentes. Exercício académico de HTML e CSS.">
+    <title>Componentes | Saraiva Tech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip" href="#conteudo">Saltar para o conteúdo</a>
+    <header>
+        <div class="container">
+            <a href="../index.html">← Módulo 02</a>
+            <p class="marca">Saraiva Tech</p>
+            <p class="eyebrow">Exercício 04</p>
+            <h1>Componentes</h1>
+            
+        </div>
+    </header>
+    <main id="conteudo" class="container">
+        <p class="note">Uma biblioteca de componentes para assistência informática. O formulário é demonstrativo e não envia nem guarda dados.</p>
+        <section aria-labelledby="servicos">
+            <h2 id="servicos">01 · Cartões de serviços</h2>
+            <div class="cards">
+                <article class="card"><span class="badge badge-info">Avaliação</span><h3>Diagnóstico</h3><p>Identificação da origem de falhas de arranque, lentidão ou erros do sistema.</p><a href="#formulario">Descrever o problema</a></article>
+                <article class="card"><span class="badge">Manutenção</span><h3>Limpeza interna</h3><p>Remoção de pó e verificação do sistema de arrefecimento do equipamento.</p><a href="#formulario">Pedir informações</a></article>
+                <article class="card"><span class="badge badge-wait">Após diagnóstico</span><h3>Reparação</h3><p>Avaliação dos componentes e proposta de intervenção antes da reparação.</p><a href="#formulario">Preparar um pedido</a></article>
+            </div>
+        </section>
+        <section aria-labelledby="botoes">
+            <h2 id="botoes">02 · Botões</h2>
+            <div class="actions"><a class="btn" href="#formulario">Preparar pedido</a><a class="btn btn-secondary" href="../ex03/index.html">Consultar preparação</a><button class="btn" type="button" disabled>Envio indisponível</button></div>
+        </section>
+        <section aria-labelledby="alertas">
+            <h2 id="alertas">03 · Alertas</h2>
+            <div class="alerts">
+                <p class="alert alert-info"><strong>Informação:</strong> faz uma cópia de segurança antes de entregar o computador.</p>
+                <p class="alert alert-warning"><strong>Atenção:</strong> se o equipamento tiver líquido no interior, mantém-no desligado e informa a equipa.</p>
+                <p class="alert alert-success"><strong>Exemplo de confirmação:</strong> a receção do equipamento foi registada. Esta mensagem é apenas ilustrativa.</p>
+            </div>
+        </section>
+        <section aria-labelledby="etiquetas">
+            <h2 id="etiquetas">04 · Badges de estado</h2>
+            <p>As etiquetas combinam texto e cor para identificar o estado de um pedido.</p>
+            <div class="actions"><span class="badge badge-info">Em diagnóstico</span><span class="badge badge-wait">A aguardar aprovação</span><span class="badge">Concluído</span></div>
+        </section>
+        <section id="formulario" aria-labelledby="titulo-formulario">
+            <h2 id="titulo-formulario">05 · Formulário de assistência — demonstração</h2>
+            <form class="panel form" aria-describedby="aviso-formulario">
+                <p id="aviso-formulario" class="muted">Experimenta os campos e o botão de limpar. Não existe envio; usa dados fictícios.</p>
+                <div class="field"><label for="nome">Nome</label><input id="nome" name="nome" type="text" autocomplete="off" placeholder="Ex.: Utilizador de teste"></div>
+                <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="off" placeholder="Ex.: teste@example.com"></div>
+                <div class="field"><label for="servico">Serviço</label><select id="servico" name="servico"><option value="">Seleciona um serviço</option><option>Diagnóstico</option><option>Limpeza interna</option><option>Reparação</option></select></div>
+                <div class="field"><label for="problema">Descrição do problema</label><textarea id="problema" name="problema" rows="5" placeholder="O que acontece e em que situações?"></textarea></div>
+                <div class="actions"><button class="btn" type="submit" disabled>Enviar — indisponível na demonstração</button><button class="btn btn-secondary" type="reset">Limpar campos</button></div>
+            </form>
+        </section>
+    </main>
+    <footer><div class="container">Saraiva Tech · Exercício académico · <a href="../index.html">Todos os exercícios</a></div></footer>
+</body>
+</html>

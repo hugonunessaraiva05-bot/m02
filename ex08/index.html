@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de reparações | Saraiva Tech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard">
+    <a class="skip" href="#conteudo">Saltar para o conteúdo</a>
+    <header class="dash-header"><div><p class="marca">Saraiva Tech</p><h1>Gestão de reparações</h1></div><span class="demo-label">Painel fictício · Dados de demonstração</span></header>
+    <aside class="sidebar"><nav aria-label="Navegação do painel"><p class="eyebrow">Área de trabalho</p><a href="#indicadores">Indicadores</a><a href="#pedidos">Pedidos de reparação</a><a href="#notas">Notas da oficina</a><a href="../index.html">← Módulo 02</a></nav></aside>
+    <main id="conteudo" class="dash-main">
+        <section id="indicadores"><p class="eyebrow">Visão geral</p><h2>Estado da oficina</h2><p class="muted">Cenário demonstrativo de 16 de novembro de 2026. Os indicadores correspondem aos seis pedidos da tabela.</p>
+            <div class="metrics"><article class="panel metric"><h3>Total de pedidos</h3><p>6</p><span>Todos os estados</span></article><article class="panel metric"><h3>Em diagnóstico</h3><p>2</p><span>Avaliação inicial</span></article><article class="panel metric"><h3>Em reparação</h3><p>2</p><span>Intervenção em curso</span></article><article class="panel metric"><h3>Concluídos</h3><p>2</p><span>Prontos para entrega</span></article></div>
+        </section>
+        <section id="pedidos" class="panel"><h2>Pedidos de reparação</h2><p id="ajuda-tabela" class="muted">Em ecrãs pequenos, desloca a tabela na horizontal. Podes focar esta área com Tab e usar as setas do teclado.</p>
+            <div class="table-scroll" role="region" aria-label="Tabela de pedidos, com deslocamento horizontal" aria-describedby="ajuda-tabela" tabindex="0">
+                <table><caption>Pedidos fictícios — situação em 16/11/2026</caption><thead><tr><th scope="col">Pedido</th><th scope="col">Cliente fictício</th><th scope="col">Equipamento</th><th scope="col">Serviço</th><th scope="col">Estado</th></tr></thead><tbody>
+                    <tr><th scope="row">ST-101</th><td>Cliente A</td><td>Portátil</td><td>Falha de arranque</td><td><span class="badge badge-info">Em diagnóstico</span></td></tr>
+                    <tr><th scope="row">ST-102</th><td>Cliente B</td><td>Computador de secretária</td><td>Substituição de disco</td><td><span class="badge badge-wait">Em reparação</span></td></tr>
+                    <tr><th scope="row">ST-103</th><td>Cliente C</td><td>Portátil</td><td>Limpeza interna</td><td><span class="badge">Concluído</span></td></tr>
+                    <tr><th scope="row">ST-104</th><td>Cliente D</td><td>Computador de secretária</td><td>Reinícios inesperados</td><td><span class="badge badge-info">Em diagnóstico</span></td></tr>
+                    <tr><th scope="row">ST-105</th><td>Cliente E</td><td>Portátil</td><td>Substituição de teclado</td><td><span class="badge badge-wait">Em reparação</span></td></tr>
+                    <tr><th scope="row">ST-106</th><td>Cliente F</td><td>Portátil</td><td>Manutenção do sistema</td><td><span class="badge">Concluído</span></td></tr>
+                </tbody></table>
+            </div>
+        </section>
+        <section id="notas" class="note"><h2>Notas da oficina</h2><p>Confirmar os acessórios na receção e registar os resultados do diagnóstico antes de propor uma intervenção. Este painel é estático: não permite alterar ou guardar pedidos.</p><a href="../ex03/index.html">Consultar o guia de preparação</a></section>
+    </main>
+    <footer class="dash-footer">Saraiva Tech · Módulo 02 · Ex08 — Dashboard · Sem dados reais</footer>
+</body>
+</html>

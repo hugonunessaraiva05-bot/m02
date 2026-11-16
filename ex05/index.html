@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saraiva Tech · Módulo 02 · Flexbox Playground. Exercício académico de HTML e CSS.">
+    <title>Flexbox Playground | Saraiva Tech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip" href="#conteudo">Saltar para o conteúdo</a>
+    <header>
+        <div class="container">
+            <a href="../index.html">← Módulo 02</a>
+            <p class="marca">Saraiva Tech</p>
+            <p class="eyebrow">Exercício 05</p>
+            <h1>Flexbox Playground</h1>
+            
+        </div>
+    </header>
+    <main id="conteudo" class="container">
+        <p>Seis experiências com a mesma linguagem visual e distribuições diferentes. Redimensiona a janela para observar o comportamento.</p>
+        <section class="panel">
+            <h2>01 · Coluna de etapas</h2><p><code>flex-direction: column</code> e <code>gap: 12px</code> empilham os elementos.</p>
+            <div class="demo column"><div class="item">1. Receção</div><div class="item">2. Diagnóstico</div><div class="item">3. Intervenção</div></div>
+        </section>
+        <section class="panel">
+            <h2>02 · Distribuição entre extremos</h2><p><code>justify-content: space-between</code> distribui o espaço livre no eixo principal.</p>
+            <div class="demo between"><div class="item">Entrada</div><div class="item">Saída</div></div>
+        </section>
+        <section class="panel">
+            <h2>03 · Alinhamento ao centro</h2><p><code>align-items: center</code> centra verticalmente elementos com alturas diferentes. <code>justify-content: center</code> centra o grupo na horizontal.</p>
+            <div class="demo centered"><div class="item">A</div><div class="item tall">B<br>Mais<br>alto</div><div class="item">C</div></div>
+        </section>
+        <section class="panel">
+            <h2>04 · Catálogo com várias linhas</h2><p><code>flex-wrap: wrap</code> permite quebrar a linha. O <code>gap: 16px</code> separa os serviços.</p>
+            <div class="demo wrapping"><div class="item">Diagnóstico</div><div class="item">Limpeza</div><div class="item">Reparação</div><div class="item">Redes</div><div class="item">Manutenção</div></div>
+        </section>
+        <section class="panel">
+            <h2>05 · Crescimento proporcional</h2><p>Com <code>flex-basis: 0</code>, o elemento B tem <code>flex-grow: 2</code>; A e C têm <code>flex-grow: 1</code>. B recebe o dobro do espaço de conteúdo dos restantes.</p>
+            <div class="demo growing"><div class="item">A · 1</div><div class="item double">B · 2</div><div class="item">C · 1</div></div>
+        </section>
+        <section class="panel">
+            <h2>06 · Encolhimento diferente</h2><p>Ambos partem de <code>flex-basis: 240px</code> num contentor com até 420px. B tem <code>flex-shrink: 3</code> e cede três vezes mais espaço do que A, com <code>flex-shrink: 1</code>.</p>
+            <div class="demo shrinking"><div class="item">A · shrink 1</div><div class="item faster">B · shrink 3</div></div>
+        </section>
+        <section class="panel">
+            <h2>Bónus · Navegação com Flexbox</h2><p>A marca e os links usam <code>display: flex</code>, <code>flex-wrap</code>, <code>gap</code> e <code>justify-content</code>.</p>
+            <nav class="flex-nav" aria-label="Exercícios relacionados"><strong>Saraiva Tech</strong><div class="nav-links"><a href="../ex04/index.html">Componentes</a><a href="../ex06/index.html">Navegação responsiva</a><a href="../index.html">Módulo 02</a></div></nav>
+        </section>
+    </main>
+    <footer><div class="container">Saraiva Tech · Exercício académico · <a href="../index.html">Todos os exercícios</a></div></footer>
+</body>
+</html>

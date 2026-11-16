@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model — Saraiva Tech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="marca">Saraiva Tech</p>
+            <h1>Box Model</h1>
+            <p>Conteúdo, padding, borda e margem nos nossos cartões de serviços.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section aria-labelledby="servicos">
+            <h2 id="servicos">Serviços de tecnologia</h2>
+            <p>Cada cartão usa width, padding, border, margin e box-sizing.</p>
+            <div class="cartoes">
+                <article class="cartao">
+                    <span class="categoria">01 / Web</span>
+                    <h3>Criação de sites</h3>
+                    <p>Sites adaptados a computadores, tablets e telemóveis para apresentar o teu negócio.</p>
+                </article>
+                <article class="cartao">
+                    <span class="categoria">02 / Assistência</span>
+                    <h3>Suporte técnico</h3>
+                    <p>Diagnóstico e resolução de problemas para manter os teus equipamentos a funcionar.</p>
+                </article>
+                <article class="cartao">
+                    <span class="categoria">03 / Sistemas</span>
+                    <h3>Redes e manutenção</h3>
+                    <p>Configuração de redes e manutenção de computadores para o dia a dia da tua equipa.</p>
+                </article>
+            </div>
+            <p class="nota">Nestes cartões: <code>width: 280px</code>, <code>padding: 24px</code>, <code>border: 2px solid</code>, <code>margin: 12px</code> e <code>box-sizing: border-box</code>. A largura até à borda é 280px; com as margens laterais, ocupam 304px.</p>
+        </section>
+
+        <section class="comparacao" aria-labelledby="comparacao">
+            <h2 id="comparacao">Bónus: a mesma largura, duas caixas diferentes</h2>
+            <p>Os dois cartões têm <code>width: 240px</code>, <code>padding: 20px</code>, <code>border: 2px solid</code> e <code>margin: 12px</code>. Só muda o <code>box-sizing</code>.</p>
+            <div class="cartoes">
+                <article class="cartao-comparacao content-box">
+                    <span class="categoria">A / content-box</span>
+                    <h3>Criação de sites</h3>
+                    <p>A largura definida aplica-se apenas ao conteúdo.</p>
+                    <p class="medida">284px até à borda</p>
+                    <p class="calculo">240 + 20 + 20 + 2 + 2 = 284px</p>
+                    <p>Com margens: 284 + 12 + 12 = <strong>308px</strong>.</p>
+                </article>
+                <article class="cartao-comparacao border-box">
+                    <span class="categoria">B / border-box</span>
+                    <h3>Suporte técnico</h3>
+                    <p>A largura definida já inclui o conteúdo, o padding e a borda.</p>
+                    <p class="medida">240px até à borda</p>
+                    <p class="calculo">Conteúdo: 240 − 40 − 4 = 196px</p>
+                    <p>Com margens: 240 + 12 + 12 = <strong>264px</strong>.</p>
+                </article>
+            </div>
+            <aside class="nota">
+                <strong>A margem fica por fora em ambos.</strong> O padding separa o conteúdo da borda; a margem separa o cartão dos elementos vizinhos e não entra na largura definida por box-sizing. Os cartões ficam lado a lado quando há espaço e passam para a linha seguinte em ecrãs estreitos.
+            </aside>
+        </section>
+    </main>
+    <footer class="container">Módulo 02 · Exercício 02 · HTML e CSS</footer>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Saraiva Tech · Módulo 02 · Galeria de fotografias. Exercício académico de HTML e CSS.">
+    <title>Galeria de fotografias | Saraiva Tech</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <a class="skip" href="#conteudo">Saltar para o conteúdo</a>
+    <header>
+        <div class="container">
+            <a href="../index.html">← Módulo 02</a>
+            <p class="marca">Saraiva Tech</p>
+            <p class="eyebrow">Exercício 07</p>
+            <h1>Galeria de fotografias</h1>
+            
+        </div>
+    </header>
+    <main id="conteudo" class="container">
+        <section aria-labelledby="galeria-titulo">
+            <h2 id="galeria-titulo">Tecnologia em perspetiva</h2><p>Uma seleção visual para a Saraiva Tech: equipamento, componentes e ambientes de trabalho. São fotografias ilustrativas de banco de imagens, não instalações ou trabalhos reais da empresa.</p>
+            <div class="gallery">
+                <figure class="photo featured"><img src="images/portatil.jpg" alt="Portátil aberto com código no ecrã, sobre uma mesa de madeira." width="1400" height="933"><figcaption><strong>01 · O equipamento</strong><span>O ponto de partida de cada diagnóstico.</span></figcaption></figure>
+                <figure class="photo circuit"><img src="images/circuito.jpg" alt="Pormenor de uma placa de circuito eletrónico com componentes e ligações." width="1100" height="733" loading="lazy"><figcaption><strong>02 · Os componentes</strong><span>A tecnologia vista de perto.</span></figcaption></figure>
+                <figure class="photo desk"><img src="images/secretaria.jpg" alt="Secretária com um portátil aberto, um monitor e acessórios de trabalho." width="1100" height="732" loading="lazy"><figcaption><strong>03 · O espaço de trabalho</strong><span>Equipamentos que fazem parte do dia a dia.</span></figcaption></figure>
+                <figure class="photo code"><img src="images/codigo.jpg" alt="Ecrã de computador com várias linhas de código de programação." width="1100" height="733" loading="lazy"><figcaption><strong>04 · O software</strong><span>Outra parte essencial do sistema.</span></figcaption></figure>
+            </div>
+        </section>
+        <section id="fontes" class="panel"><h2>Fontes das fotografias</h2><p>Imagens guardadas em <code>ex07/images/</code>. Autores e páginas de origem:</p><ul><li><a href="https://unsplash.com/photos/XJXWbfSo2f0">Luca Bravo — portátil</a></li><li><a href="https://unsplash.com/photos/jXd2FSvcRr8">Umberto — circuito eletrónico</a></li><li><a href="https://unsplash.com/photos/m_HRfLhgABo">Christopher Gower — secretária</a></li><li><a href="https://unsplash.com/photos/4hbJ-eymZ1o">Florian Olivo — código</a></li></ul><p>Utilização segundo a <a href="https://unsplash.com/license">licença Unsplash</a>. O registo dos ficheiros e URLs está também em <a href="FONTES.md">FONTES.md</a>.</p></section>
+    </main>
+    <footer><div class="container">Saraiva Tech · Exercício académico · <a href="../index.html">Todos os exercícios</a></div></footer>
+</body>
+</html>
