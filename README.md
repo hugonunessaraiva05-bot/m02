@@ -1,4 +1,4 @@
-*Hugo Nunes* · **881942** · Licenciatura em Informática · 16/11/2026
+Trabalho realizado por: *Hugo Nunes*, número mecanográfico: **881942**. Curso: Licenciatura em Informática. Data: 16/11/2026.
 
 # Módulo 02 — HTML e CSS
 
